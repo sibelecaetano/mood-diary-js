@@ -1,0 +1,60 @@
+/* Corpo com fundo gradiente e centralização */
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(192, 158, 211) 10%,
+    rgb(194, 119, 188) 45%,
+    rgb(134, 116, 185) 92%
+  );
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Serif", serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 4px #444;
+}
+
+/* Caixa principal */
+.container {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  opacity: 0.95;
+}
+
+/* Título interno */
+.container h2 {
+  font-style: italic;
+  color: #7c30ac;
+  margin-bottom: 20px;
+}
+
+/* Botões de emoji */
+.selecionar-mood button {
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.selecionar-mood button:hover {
+  transform: scale(1.2);
+}
